@@ -1,0 +1,4 @@
+.idea
+dist
+.publish
+node_modules
