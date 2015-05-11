@@ -1,12 +1,25 @@
 var gulp = require('gulp');
-var ghPages = require('gulp-gh-pages');
+var browserSync = require('browser-sync');
 
 
 module.exports = function(options){
 
-  gulp.task('deploy', ['build'], function(){
-    gulp.src(options.dist + "/**/*.*")
-      .pipe(ghPages());
+  gulp.task('serve', ['watch'], function(){
+
+    var server = {
+      baseDir: [options.tmp + '/serve', options.src],
+      routes: {'/bower_components': 'bower_components'}
+    }
+
+    browserSync.instance = browserSync.init({
+      startPath: '/',
+      server: server,
+      browser: 'default'
+    });
+
+
+
+
   });
 
 
