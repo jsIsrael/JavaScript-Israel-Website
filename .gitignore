@@ -2,3 +2,5 @@
 dist
 .publish
 node_modules
+bower_components
+.tmp

@@ -31,6 +31,7 @@ $break-large: 1024px;
 body {
   background: #ffffff;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -60,10 +61,9 @@ a {
 header {
 
   display: flex;
-  justify-content: center;
   background: $primary-color;
   overflow: visible;
-  height: 3.6rem;
+  height: 3.6em;
   padding-top: 0.4rem;
 
   @include respond-to(handhelds) {
@@ -74,6 +74,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
 
     .logo {
       @include respond-to(handhelds) {
@@ -87,8 +88,8 @@ header {
       display: flex;
       justify-content: flex-end;
       flex-grow: 2;
-      align-items: center;
-      //margin-top: 0.8rem;
+      align-items: flex-start;
+      margin-top: 0.8rem;
 
       a {
         color: $primary-color-contrast;
