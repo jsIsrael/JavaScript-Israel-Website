@@ -153,7 +153,24 @@ header {
   }
 }
 
+.section-content{
+  padding: 2rem;
+}
 
+.sponsors-logos{
+  padding: 3rem;
+  text-align: center;
+}
+
+.sponsors-logos__logo{
+
+  max-width: 50%;
+
+  @include respond-to(handhelds) {
+    max-width: 100%;
+  }
+
+}
 
 .about {
   background: $primary-color-saturated;
