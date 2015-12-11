@@ -1,15 +1,18 @@
 var gulp = require('gulp');
-var gutil = require('gulp-util');
-var wrench = require('wrench');
-var plumber = require('gulp-plumber');
-
+var plugins = require('gulp-load-plugins')({
+  pattern: ['gulp-*', 'browser-sync', 'del'],
+  rename: {
+    'gulp-util': 'gutil',
+    'gulp-gh-pages-cname': 'ghPages'
+  }
+});
 
 var gulp_src = gulp.src;
 
 gulp.src = function(){
   return gulp_src.apply(gulp, arguments)
-    .pipe(plumber(function(error){
-                     gutil.log(gutil.colors.red('Error (' + error.plugin + '): ' + error.message));
+    .pipe(plugins.plumber(function(error){
+                     plugins.gutil.log(plugins.gutil.colors.red('Error (' + error.plugin + '): ' + error.message));
                      this.emit('end');
                    }))
 }
@@ -22,18 +25,13 @@ gulp.src = function(){
 //  }
 //}
 
-var options = {
+var config = {
   src: 'src',
   tmp: '.tmp',
-  dist: 'dist'
+  dist: 'dist',
+  publish: '.publish'
   //errorHandler: errorHandler
 }
 
-wrench.readdirSyncRecursive('./gulp')
-  .filter(function(file){
-    return (/\.js$/i).test(file);
-  })
-  .map(function(file){
-        require('./gulp/' + file)(options);
-   });
+require('gulp-autoload-tasks')(gulp, plugins, config);
 

@@ -4,24 +4,26 @@
   "description": "JavaScript Israel Website",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.7.1",
-    "del": "^1.2.0",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.2.0",
-    "gulp-debug": "^2.0.1",
-    "gulp-gh-pages-cname": "^0.5.2",
-    "gulp-inject": "^1.2.0",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-plumber": "^1.0.0",
-    "gulp-sass": "^2.0.0",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-util": "^3.0.4",
-    "run-sequence": "^1.1.0",
-    "wrench": "^1.5.8"
+    "browser-sync": "2.7.1",
+    "del": "1.2.0",
+    "gulp": "3.8.11",
+    "gulp-autoload-tasks": "0.0.3",
+    "gulp-autoprefixer": "2.2.0",
+    "gulp-debug": "2.0.1",
+    "gulp-gh-pages-cname": "0.5.2",
+    "gulp-inject": "1.2.0",
+    "gulp-load-plugins": "0.10.0",
+    "gulp-plumber": "1.0.0",
+    "gulp-sass": "2.0.0",
+    "gulp-sequence": "0.4.0",
+    "gulp-sourcemaps": "1.5.2",
+    "gulp-util": "3.0.4",
+    "run-sequence": "1.1.0",
+    "wrench": "1.5.8"
   }
 }
