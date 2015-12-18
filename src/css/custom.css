@@ -1,0 +1,72 @@
+/* Landing page overlay color and opacity tweaks */
+header.fullscreen-element .overlay:before,
+.image-divider.overlay:before {
+	opacity: 0.6;
+	background-color: #000;
+}
+
+/* Help / Sponsor section link tweaks */
+.blog-snippet-2 a {
+	color: #428bca;
+}
+
+.blog-snippet-2 li .icon {
+	text-align: center;
+	padding-right: 8px;
+}
+
+.blog-snippet-2 li .icon i {
+	margin-top: 5px;
+	position: static;
+}
+
+.blog-snippet-2 span a {
+	color: #333333;
+	display: inline;
+}
+
+/* Team image tweaks */
+img.team-image {
+	width: 172px;
+	height: 172px;
+	border-radius: 50%;
+}
+
+/* Famous quote overlay tweak */
+.overlay:before {
+  opacity: 0.6;
+  background-color: #000;
+}
+
+/* Logo width fix */
+.logo.logo-wide {
+	max-width: 225px;
+}
+
+/* Header border bottom */
+.row.nav-menu {
+	padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Workarounds for the JavaScript vertical align / fullscreen height functions */
+header .container.align-vertical-smart {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    height: 230px;
+	margin: auto;
+}
+
+.fullscreen-element-smart {
+	height: 100vh;
+}
+
+/* Fix for too much padding in the header navigation menu on mobile */
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .nav-menu {
+    padding-top: 17px;
+  }
+}

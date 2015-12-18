@@ -1,288 +1,636 @@
-<!doctype html>
-<html>
 
-<head>
-  <title>JavaScript Israel - The Largest JavaScript Group In Israel</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="JavaScript Israel is a Meetup and Facebook group
-                                     with the main goal of sharing JavaScript knowledge in a fun way"/>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>JavaScript Israel</title>
+		
+		<!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">		
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The largest JavaScript group in Israel. Founded in January 2013, our mission is to share JavaScript knowledge in a fun and accessible way.">
+		
+		<!-- Icon -->
+		<link rel="icon" href="favicon.ico" type="text/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="text/x-icon"/>
+		
+		<!-- CSS -->
+        <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/theme-blues.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+		
+        <!--[if gte IE 9]>
+        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+		<![endif]-->
+		
+		<!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>		
+    </head>
+    <body>
+		<!-- Navigation -->
+		<div class="nav-container">
+			<nav class="top-bar overlay-bar">
+				<div class="container">
+					<!--div class="row utility-menu">
+						<div class="col-sm-12">
+							<div class="utility-inner clearfix">
+								<span class="alt-font"><i class="icon icon_pin"></i> 300 Collins St Melbourne</span>
+								<span class="alt-font"><i class="icon icon_mail"></i> hello@pivot.net</span>
+							
+								<div class="pull-right">
+									<a href="login.html" class="btn btn-primary login-button btn-xs">Login</a>
+									<a href="#" class="btn btn-primary btn-filled btn-xs">Signup</a>
+									<a href="#" class="language"><img alt="English" src="img/english.png"></a>
+									<a href="#" class="language"><img alt="English" src="img/denmark.png"></a>
+								</div>
+							</div>
+						</div>
+					</div-->
+					<div class="row nav-menu">
+						<div class="col-sm-3 col-md-2 columns">
+							<a href="index.html">
+								<img class="logo logo-light" alt="Logo" src="img/logo-light.png">
+								<img class="logo logo-dark" alt="Logo" src="img/logo-dark.png">
+							</a>
+						</div>
+						<div class="col-sm-9 col-md-10 columns">
+							<ul class="menu">
+								<!--li><a href="#">Home</a></li>
+								<li class="has-dropdown"><a href="#">Pages</a>
+									<ul class="subnav">
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="about-2.html">About Us 2</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="services-2.html">Services 2</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="404.html">404 Error</a></li>
+										<li><a href="500.html">500 Error</a></li>
+									</ul>
+								</li-->
+							</ul>
 
-  <link rel="icon" href="/favicon.ico" type="text/x-icon"/>
-  <link rel="shortcut icon" href="/favicon.ico" type="text/x-icon"/>
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,600,400' rel='stylesheet'
-        type='text/css'>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-  <!--<link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
-  <link rel="stylesheet" href="styles/index.css"/>
-
-  <!-- inject:css -->
-  <!-- endinject -->
-
-  <!--<script src="bower_components/modernizr/modernizr.js"></script>-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script>
-    // Old browser detection
-    if (Modernizr.flexbox === false) {
-      // No Media Query Support Detected - do something
-      window.location.href = "/upgradebrowser.html";
-//        alert('NO FLEXBOX');
-    }
-  </script>
-</head>
-
-<body>
-
-
-<header>
-  <div class="bound-container header-content">
-    <div class="logo">
-      <a href="/">
-        <img src="assets/images/logo.png" alt="JavaScript Israel Logo"/>
-      </a>
-    </div>
-
-    <navbar>
-      <!--<a href="/about">About Us</a>-->
-      <!--<a href="/sponsor">Sponsor Us</a>-->
-      <a href="http://www.meetup.com/JavaScript-Israel/" target="_blank"
-         title="JavaScript Israel Meetup Page"><img src="assets/images/meetup-logo.png"
-                                                    alt="JavaScript Israel Meetup Page"/></a>
-      <a href="https://www.facebook.com/groups/jsisrael/" target="_blank"
-         title="JavaScript Israel Facebook Group"><i class="fa fa-2x fa-facebook-square"></i></a>
-      <a href="http://www.youtube.com/user/javascriptisrael" target="_blank"
-         title="JavaScript Israel Youtube Page"><i class="fa fa-2x fa-youtube"></i></a>
-      <!--<a href="/contact">Contact Us</a>-->
-    </navbar>
-  </div>
-
-</header>
-
-<section class="hero">
-  <div class="hero-content">
-    <div class="shimon"><img src="assets/images/hero-shimon.png" alt="Shimon!"/></div>
-
-    <h1>The Largest JavaScript Group In Israel</h1>
-  </div>
-</section>
-
-<section class="about">
-  <article class="bound-container about-content">
-    Founded in January 2013, JavaScript Israel's mission is to share knowledge in a <span class="big-ass-words">fun and accessible
-        way</span>,
-    in order to create a better community of
-    JavaScript developers we can work with, hire, and learn from.</p>
-
-
-  </article>
-</section>
-
-<section>
-  <div class="action-boxes bound-container">
-
-    <div class="action-box members">
-      <div class="action-box-headline"><h2>Wanna Learn?</h2></div>
-      <div class="action-box-content">
-        <a href="http://www.meetup.com/JavaScript-Israel/" target="_blank" title="Join Our Next Event">Join Our
-          Next Event</a>
-        <a href="http://www.youtube.com/user/javascriptisrael" target="_blank" title="Watch Videos">Watch
-          Videos</a>
-        <a href="https://www.facebook.com/groups/jsisrael/" target="_blank" title="Join The Discussion">Join The
-          Discussion</a>
-      </div>
-    </div>
-
-    <div class="action-box speakers">
-      <div class="action-box-headline"><h2>Wanna Help?</h2></div>
-      <div class="action-box-content">
-        <a href="http://bit.ly/jsil-apply" target="_blank" title="Submit A Lecture">Submit A Lecture</a>
-        <a href="https://docs.google.com/document/d/1Amyz24kg7FOfxTQeef0k-Cb3teJdAaa8ved5CtYvibY/edit" target="_blank"
-           title="Missing Topics List">(Missing Topics List)</a>
-        <a href="https://github.com/jsIsrael/JavaScript-Israel-Website" target="_blank"
-           title="Improve This Website">Improve This Website</a>
-        <a href="https://www.facebook.com/groups/jsisrael/" target="_blank" title="Answer Questions">Answer
-          Questions</a>
-      </div>
-    </div>
-
-    <div class="action-box sponsors">
-      <div class="action-box-headline"><h2>Wanna Sponsor?</h2></div>
-      <div class="action-box-content">
-        <a href="http://bit.ly/jsil-sponsor" target="_blank" title="Sponsor The Next Event">Sponsor The Next
-          Event</a>
-        <a href="http://bit.ly/jsil-hosting" target="_blank" title="Host The Next Event">Host The Next Event</a>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="section-header">
-  <h1>Community Top Contributors</h1>
-</section>
-
-<section class="people">
-  <div class="people-content bound-container">
-    <figure>
-      <img src="assets/images/people/uri-shaked.jpg" alt="Uri Shaked"/>
-      <figcaption>
-        <p>Uri Shaked</p>
-        <a href="https://twitter.com/urishaked" target="_blank">@urishaked</a>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="assets/images/people/oren-rubin.jpg" alt="Oren Rubin"/>
-      <figcaption>
-        <p>Oren Rubin</p>
-        <a href="https://twitter.com/shexman" target="_blank">@shexman</a>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="assets/images/people/benjamin-gruenbaum.jpg" alt="Benjamin Gruenbaum"/>
-      <figcaption>
-        <p>Benjamin Gruenbaum</p>
-        <a href="https://github.com/benjamingr" title="Benjamin's Github Page" target="_blank"><i
-            class="fa fa-github-square"></i></a>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="assets/images/people/asaf-david.jpg" alt="Asaf David"/>
-      <figcaption>
-        <p>Asaf David</p>
-        <a href="https://twitter.com/asafdav" target="_blank">@asafdav</a>
-      </figcaption>
-    </figure>
-    
-    <figure>
-      <img src="assets/images/people/alon-heller.jpg" alt="Alon Heller"/>
-      <figcaption>
-        <p>Alon Heller</p>
-        <a href="https://twitter.com/alonheller" target="_blank">@alonheller</a>
-      </figcaption>
-    </figure>
-    
-  </div>
-
-</section>
-
-<section class="section-header">
-  <h1>Our Gold Sponsor</h1>
-</section>
-
-
-<section>
-  <div class="bound-container section-content">
-    <div class="sponsors-logos">
-      <a href="http://engineering.wix.com/"><img src="assets/images/sponsors/wix.png"
-                                                 class="sponsors-logos__logo"
-                                                 title="Wix Engineering - Our Gold Sponsor"
-                                                 alt="Wix Engineering - Our Gold Sponsor Image"/></a>
-    </div>
-  </div>
-</section>
-
-<section class="section-header">
-  <h1>Organizers Team</h1>
-</section>
-
-<section class="people">
-  <div class="people-content bound-container">
-    <figure>
-      <img src="assets/images/people/shai-reznik.jpg" alt="Shai Reznik"/>
-      <figcaption>
-        <p>Shai Reznik</p>
-        <a href="https://twitter.com/shai_reznik" target="_blank">@shai_reznik</a>
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="assets/images/people/alon-barak.jpg" alt="Alon Barak"/>
-      <figcaption>
-        <p>Alon Barak</p>
-
-      </figcaption>
-    </figure>
-
-
-    </figure>
-  </div>
-
-</section>
-
-<!--<section class="section-header">-->
-<!--<h1>Videos</h1>-->
-<!--</section>-->
-
-<!--<section>-->
-<!--<div class="bound-container">-->
-<!--<iframe src="http://stream.wixplus.com/widget?compId=i9n6eaia&deviceType=desktop&instance=oyaB0JrAYQ9Abvo1LAsz3n85wXid2kd_VmCL1ChbAp4.eyJpbnN0YW5jZUlkIjoiMTNkZGUwZDUtMzNjNi0wNmNiLWFmMTAtMTQwZDE3ZjFhOWY0Iiwic2lnbkRhdGUiOiIyMDE1LTA1LTEzVDIwOjA3OjA2LjAyNloiLCJ1aWQiOiI1NzA5MDhkMi05NjkxLTRhN2YtYjk1Zi0zMWU3Yjg3YTU0ZDIiLCJwZXJtaXNzaW9ucyI6Ik9XTkVSIiwiaXBBbmRQb3J0IjoiMTA5LjY2LjEyMS45OC8zOTQxMyIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiIzZjFiZWE5Yi0wNjY3LTRiODEtYmE3MC03ZGFjM2NmMDU2OWEifQ&locale=en&viewMode=site&cacheKiller=1431547624562&width=852&autosize=stream-iframe-1" height="600" width="100%" style="border:none"; class="stream-iframe-1"></iframe>-->
-<!--</div>-->
-<!--</section>-->
-
-<footer>
-  <div class="footer-content bound-container">
-
-    <section class="footer-links-container">
-
-      <section class="footer-links-box footer-logo-box">
-        <img src="assets/images/footer-logo.jpg" alt="JavaScript Israel Logo"/>
-        &copy; All rights reserved to JavaScript Israel
-
-
-      </section>
-
-      <section class="footer-links-box">
-        <h3>NEW MEMBERS</h3>
-        <!--<a href="/about" title="About JavaScript Israel">About JSIsrael</a>-->
-        <a href="http://www.meetup.com/JavaScript-Israel/" target="_blank" title="Join Our Next Event">Join Our
-          Next Event</a>
-        <a href="http://www.youtube.com/user/javascriptisrael" target="_blank" title="Watch Videos">Watch
-          Videos</a>
-        <a href="https://www.facebook.com/groups/jsisrael/" target="_blank" title="Join The Discussion">Join The
-          Discussion</a>
-      </section>
-
-      <section class="footer-links-box">
-        <h3>SUPPORT OTHERS</h3>
-        <a href="http://bit.ly/jsil-apply" target="_blank" title="Submit A Lecture">Submit A Lecture</a>
-        <a href="https://github.com/jsIsrael/JavaScript-Israel-Website" target="_blank"
-           title="Improve This Website">Improve This Website</a>
-        <a href="https://www.facebook.com/groups/jsisrael/" target="_blank" title="Answer Questions">Answer
-          Questions</a>
-      </section>
-
-      <section class="footer-links-box">
-        <h3>SPONSOR</h3>
-        <a href="http://bit.ly/jsil-sponsor" target="_blank" title="Sponsor The Next Event">Sponsor The Next
-          Event</a>
-        <a href="http://bit.ly/jsil-hosting" target="_blank" title="Host The Next Event">Host The Next Event</a>
-      </section>
-    </section>
-    <section class="copyrights">
-
-    </section>
-  </div>
-</footer>
-
-<!--<script src="//stream.wixplus.com/embed.js"></script>-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40496140-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</body>
-
-
+							<ul class="social-icons text-right">
+								<li>
+									<a title="Meetup Group" href="http://www.meetup.com/JavaScript-Israel/" target="_blank">
+										<i class="icon icon_group"></i>
+									</a>
+								</li>
+								<li>
+									<a title="Facebook Group" href="https://www.facebook.com/groups/jsisrael/" target="_blank">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a title="YouTube Channel" href="http://www.youtube.com/user/javascriptisrael" target="_blank">
+										<i class="icon social_youtube"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--div class="mobile-toggle">
+						<i class="icon icon_menu"></i>
+					</div-->					
+				</div>
+			</nav>
+		</div>
+		
+		<!-- Main Container -->
+		<div class="main-container">
+			
+			<!-- Landing -->
+			<header class="fullscreen-element-smart no-pad centered-text">
+				<div class="background-image-holder parallax-background overlay">
+					<img class="background-image" alt="Background Image" src="img/bg.jpg">
+				</div>
+				<div class="container align-vertical-smart">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<span class="text-white alt-font">JavaScript Israel</span>
+							<h1 class="text-white">The largest JavaScript group in Israel</h1>
+							<p class="lead text-white">Sharing best practices, new frameworks, and efficient tools since 2013.</p>
+							<a target="_blank" href="http://www.meetup.com/JavaScript-Israel/" class="btn btn-primary btn-white">Join Our Meetup Group</a>
+							<!--a href="#" class="btn btn-primary btn-filled" target="_blank">Action</a-->
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<!-- Mission -->			
+			<section class="pure-text-centered">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+							
+							<h1><strong>Our mission statement</strong></h1>
+							<p class="lead">
+								Founded in January 2013, our mission is to share JavaScript knowledge in a <b>fun and accessible way</b>, in order to
+								create a better community of JavaScript developers we can work with, hire, and learn from.
+							</p>
+						</div>
+					</div>		
+				</div>
+			</section>
+			
+			<!-- Services -->
+			<section class="duplicatable-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h1>Satisfy your crave for<br /> new JavaScript technologies</h1>
+						</div>
+					</div>
+					<br />
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon-flag"></i>
+								</div>
+								<div class="pull-right">
+									<h5>
+										<a href="http://www.meetup.com/JavaScript-Israel/" target="_blank">
+											Sign up for our next event
+										</a>
+									</h5>
+									<p>
+										We're always up to something, so check out our Meetup group to secure yourself a seat in one of our next events.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon-video"></i>
+								</div>
+								<div class="pull-right">
+									<h5>
+										<a href="http://www.youtube.com/user/javascriptisrael" target="_blank">
+											Watch videos from past events
+										</a>
+									</h5>
+									<p>
+										We go to great lengths to record most lectures in high quality, in case you can't make it to one of our events.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon-chat"></i>
+								</div>
+								<div class="pull-right">
+									<h5>
+										<a href="https://www.facebook.com/groups/jsisrael/" target="_blank">
+											Join the discussion in our Facebook group
+										</a>
+									</h5>
+									<p>
+										Participate in professional discussion with other JavaScript experts in Israel.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon-pictures"></i>
+								</div>
+								<div class="pull-right">
+									<h5>
+										<a href="https://www.facebook.com/groups/jsisrael/photos/" target="_blank">
+											Check out photos from past events
+										</a>
+									</h5>
+									<p>
+										We usually bring a photographer to our events, see if you can spot yourself in the crowd!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Quote -->
+			<header class="page-header">
+				<div class="background-image-holder parallax-background overlay">
+					<img class="background-image" alt="Background Image" src="img/developer.jpg">
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="text-center col-sm-11">
+							<span class="text-white alt-font">Douglas Crockford, JavaScript: The Good Parts</span>
+							<h1 class="text-white">"Computer programs are the most complex things that humans make."</h1>							
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<!-- Team -->
+			<section class="team-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center">
+							<h1>We're a killer team of JS enthusiasts</h1>
+							<p class="lead">
+								We're a bunch of passionate, enthusiastic people who love to organize meet ups and other cool events, and we're always looking for more people to join us. 
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-md-3">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image team-image" src="img/team/uri-shaked.jpg">
+								<h5>Uri Shaked</h5>
+								<span>Contributor</span><br>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/urishaked" target="_blank">
+											<i class="icon social_twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image team-image" src="img/team/oren-rubin.jpg">
+								<h5>Oren Rubin</h5>
+								<span>Contributor</span><br>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/shexman" target="_blank">
+											<i class="icon social_twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image team-image" src="img/team/benjamin-gruenbaum.jpg">
+								<h5>Benjamin Gruenbaum</h5>
+								<span>Contributor</span><br>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/BenjaminInglor" target="_blank">
+											<i class="icon social_twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image team-image" src="img/team/asaf-david.jpg">
+								<h5>Asaf David</h5>
+								<span>Contributor</span><br>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/asafdav" target="_blank">
+											<i class="icon social_twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-md-3">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image team-image" src="img/team/alon-heller.jpg">
+								<h5>Alon Heller</h5>
+								<span>Contributor</span><br>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/alonheller" target="_blank">
+											<i class="icon social_twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image team-image" src="img/team/elad-nava.jpg">
+								<h5>Elad Nava</h5>
+								<span>Contributor</span><br>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/eladnava" target="_blank">
+											<i class="icon social_twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image team-image" src="img/team/shai-reznik.jpg">
+								<h5>Shai Reznik</h5>
+								<span>Organizer</span><br>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/shai_reznik" target="_blank">
+											<i class="icon social_twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="team-1-member">
+								<img alt="Team Member" class="background-image team-image" src="img/team/alon-barak.jpg">
+								<h5>Alon Barak</h5>
+								<span>Organizer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Help / Sponsor -->
+			<section class="side-image clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 content col-sm-8 clearfix">
+							<h1>Give back to the JavaScript community</h1>
+							<ul class="blog-snippet-2">
+								<li>
+									<div class="icon">
+										<i class="icon-mic"></i>
+									</div>
+									<div class="title">
+										<a href="http://bit.ly/jsil-apply" target="_blank">Talk about JavaScript</a>
+										<span>
+											Give a lecture at one of our meetups. Choose a topic from one of the <a href="http://bit.ly/jsil-missing-lectures" target="_blank">missing lectures list</a>, or propose a new one.
+										</span>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<i class="icon-map"></i>
+									</div>
+									<div class="title">
+										<a href="http://bit.ly/jsil-hosting" target="_blank">Host the next event</a>
+										<span>
+											Have a venue you can offer? Get in touch with us.
+										</span>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<i class="icon-heart"></i>
+									</div>
+									<div class="title">
+										<a href="http://bit.ly/jsil-sponsor" target="_blank">Sponsor the next event</a>
+										<span>
+											Contact us if you'd like to become an official JavaScript Israel sponsor.
+										</span>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<i class="icon-pencil"></i>
+									</div>
+									<div class="title">
+										<a href="https://www.facebook.com/groups/jsisrael/" target="_blank">Answer burning JavaScript questions</a>
+										<span>
+											Spread your knowledge with other developers in our Facebook group.
+										</span>
+									</div>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+				<div class="image-container col-md-5 col-sm-3 pull-right">
+					<div class="background-image-holder">
+						<img class="background-image" alt="Background Image" src="img/lightbulbs.jpg">
+					</div>
+				</div>
+			</section>
+			
+			<!-- Testimonials -->
+			<section class="bg-primary">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">
+							<div class="testimonials-slider text-center">
+								<h1 class="text-white">Testimonials</h1>
+								<ul class="slides">
+									<li>
+										<p class="text-white lead">
+											"Great growing community, looking forward to future meetups."
+										</p>
+										<span class="author text-white">
+											<a href="http://www.meetup.com/JavaScript-Israel/about/comments/?op=all" target="_blank">
+												Alon Kaduri
+											</a>
+										</span>
+									</li>
+									<li>
+										<p class="text-white lead">
+											"The best group for JavaScript knowledge in the area!"
+										</p>
+										<span class="author text-white">
+											<a href="http://www.meetup.com/JavaScript-Israel/about/comments/?op=all" target="_blank">
+												Shlomi Gvili
+											</a>
+										</span>
+									</li>
+									<li>
+										<p class="text-white lead">
+											"Great group with a lot of talent and a great future ahead. Always on the lookout for new and exciting stuff and maintains a good vibe. The organizers are very funny and keep the audience in the mood. I suggest you join this group as fast as you can!"
+										</p>
+										<span class="author text-white">
+											<a href="http://www.meetup.com/JavaScript-Israel/about/comments/?op=all" target="_blank">
+												Maor Zigel
+											</a>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Hide for now -->
+			<!--section class="clients">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="lead">Some awesome companies we've had the pleasure to work with</p>
+						</div>
+					</div>
+					
+					<div class="row client-row">
+						<div class="row-wrapper">
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/client4.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/client2.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/client3.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/client1.png">
+							</div>
+						</div>
+					</div>
+					
+					<div class="row client-row">
+						<div class="row-wrapper">
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/client5.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/client6.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/client7.png">
+							</div>
+						
+							<div class="col-sm-3 text-center">
+								<img alt="client" src="img/client8.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section-->
+			
+			<!--section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+							<i class="icon icon-jumbo social_twitter"></i>
+							<div id="tweets" data-widget-id="492085717044981760">
+							
+							</div>
+							<p>
+								Follow us <strong><a href="#">@mrareweb</a></strong> for more awesome updates
+							</p>
+						</div>
+					</div>
+				</div>
+			</section-->
+			
+			<!-- Sponsors -->
+			<section class="inline-image-right">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 align-vertical-smart no-align-mobile">
+							<h1>Our Gold Sponsor</h1>
+							<p class="lead">
+								<a href="http://wix.com" target="_blank">Wix.com</a> is a leading cloud-based development platform with millions of users worldwide. We make it easy for everyone to create a beautiful, professional web presence.
+							</p>
+						</div>
+						
+						<div class="col-sm-6 text-center">
+							<a href="http://wix.com" target="_blank">
+								<img alt="Product Image" class="product-image" src="img/sponsors/wix.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Join Us -->
+			<section class="strip bg-secondary-1">
+				<div class="container">
+					<div class="row clearfix">
+						<div class="col-sm-6 col-xs-12 pull-left">
+							<h3 class="text-white"><strong>Join us.</strong>&nbsp;Become a better developer.</h3>
+						</div>
+						
+						<div class="col-sm-4 col-xs-12 pull-right text-right">
+							<a href="http://www.meetup.com/JavaScript-Israel/" class="btn btn-primary btn-white" target="_blank">JOIN MEETUP GROUP</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<!-- Footer -->
+		<div class="footer-container">
+			<footer class="short bg-secondary-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10">
+							<span class="sub">© Copright 2015 JavaScript Israel. All rights reserved.</span>
+							<!--ul>
+								<li><a href="#">Terms Of Use</a></li>
+								<li><a href="#">Privacy &amp; Security Statement</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul-->
+						</div>
+						<div class="col-sm-2 text-right">
+							<ul class="social-icons">
+								<li>
+									<a title="Meetup Group" href="http://www.meetup.com/JavaScript-Israel/" target="_blank">
+										<i class="icon icon_group"></i>
+									</a>
+								</li>
+								<li>
+									<a title="Facebook Group" href="https://www.facebook.com/groups/jsisrael/" target="_blank">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a title="YouTube Channel" href="http://www.youtube.com/user/javascriptisrael" target="_blank">
+										<i class="icon social_youtube"></i>
+									</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+				
+		<!-- JavaScript Includes -->
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.plugin.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/skrollr.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/scrollReveal.min.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/scripts.js"></script>
+		<!--script src="https://www.youtube.com/iframe_api"></script-->
+		
+		<!-- Google Analytics -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-40496140-2', 'auto');
+		ga('send', 'pageview');
+		</script>
+    </body>
 </html>
