@@ -28,24 +28,30 @@ $(document).ready(function(){
 		}
 	});
 	
-	// Detect logo dimensions and add correct class
+	// // Detect logo dimensions and add correct class
 	
-	var logoImage = $('.top-bar .logo:first-of-type');
+	// var logoImage = $('.top-bar .logo:first-of-type');
 	
-	var theImage = new Image();
-	theImage.src = logoImage.attr("src");
+	// var theImage = new Image();
+	// theImage.src = logoImage.attr("src");
 	
-	var logoWidth = theImage.width;
-	var logoHeight = theImage.height;
-	var logoRatio = logoWidth / logoHeight;
+	// var logoWidth = theImage.width;
+	// var logoHeight = theImage.height;
+	// var logoRatio = logoWidth / logoHeight;
 	
-	if(logoRatio > 2.8){
-		$('.top-bar .logo').addClass('logo-wide');
-	}
+	// if(logoRatio > 2.8){
+	// 	$('.top-bar .logo').addClass('logo-wide');
+	// }
 	
-	if(logoRatio < 2){
-		$('.top-bar .logo').addClass('logo-square');
-	}
+	// if(logoRatio < 2){
+	// 	$('.top-bar .logo').addClass('logo-square');
+	// }
+    
+    // Can't detect the logo dimensions until the actual image is loaded,
+    // which happens after $(document).ready() since it's a remote resource.
+    // Hard-code the "logo-wide" class, since it's a wide (and not square) logo
+    
+    $('.top-bar .logo').addClass('logo-wide');
 	
 	// Smooth scroll
 	
