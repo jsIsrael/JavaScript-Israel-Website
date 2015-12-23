@@ -45,8 +45,19 @@ img.team-image {
 
 /* Header border bottom */
 .row.nav-menu {
-	padding-bottom: 18px;
+	padding-bottom: 5px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Header menu top positioning */
+.nav-menu .menu {
+    top: 8px;
+}
+
+/* Header external links positioning */
+.nav-menu .social-icons
+{
+    padding-top: 6px;
 }
 
 /* Workarounds for the JavaScript vertical align / fullscreen height functions */
