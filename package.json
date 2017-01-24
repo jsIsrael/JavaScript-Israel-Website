@@ -4,7 +4,8 @@
   "description": "JavaScript Israel Website",
   "main": "gulpfile.js",
   "scripts": {
-    
+    "serve": "gulp serve",
+    "deploy": "gulp build && gulp deploy"
   },
   "author": "",
   "license": "ISC",
